@@ -11,47 +11,7 @@
       <!-- Botpress Webchat Scripts -->
   <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
   <script src="https://mediafiles.botpress.cloud/fcbb5a3e-52ce-4340-bcbf-3395ed205698/webchat/v2.1/config.js"></script>
-  <!-- Optional Customization -->
-  <script>
-      window.botpressWebChat.init({
-          botId: 'your-bot-id',
-          hostUrl: 'https://cdn.botpress.cloud',
-          messagingUrl: 'https://cdn.botpress.cloud',
-          botName: 'Kaksha',
-          botAvatarUrl: 'https://example.com/your-bot-avatar.png',  // Optional: Custom bot avatar URL
-          // Add other customization options as needed
-      });
-      // Navbar css 
-      document.addEventListener("DOMContentLoaded", function() {
-    const mobileMenu = document.getElementById('mobile-menu');
-    const navLinks = document.querySelector('.nav-links');
-    const closeMenu = document.getElementById('close-menu');
-
-    // Show menu when hamburger icon is clicked
-    mobileMenu.addEventListener('click', () => {
-        navLinks.classList.add('active');
-        closeMenu.style.display = 'block'; // Show close button
-        mobileMenu.classList.add('hidden'); // Hide hamburger icon
-    });
-
-    // Hide menu when close button is clicked
-    closeMenu.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-        closeMenu.style.display = 'none'; // Hide close button
-        mobileMenu.classList.remove('hidden'); // Show hamburger icon
-    });
-    
-    // Close the menu when a link is clicked
-    navLinks.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-            closeMenu.style.display = 'none'; // Hide close button
-            mobileMenu.classList.remove('hidden'); // Show hamburger icon
-        });
-    });
-});
-      
-  </script>
+  <script src="script.js"></script>
     <!-- <nav class="navbar">
       <div class="logo"><img src="/Assets/images/kashya-logo2.png" alt=""></div>
       <ul class="nav-links">
@@ -83,7 +43,7 @@
         <h2 class="main-content">Kaksha Career <span id="spn-of-h2">insights</span></h2>
         <p class="main-paragraph">For students to <br>Helping you to begin your Career
           Journey </p>
-        <a href="text.html"><button class="exam-of-8to10">Start the test</button></a>
+        <a href="assesmentt.html"><button class="exam-of-8to10">Start the test</button></a>
       </div>
       <div class="img-home-section">
         <img src="/Assets/images/home-poster-1.jpg" alt="" width="200px">
@@ -128,17 +88,11 @@
         </div>
         <form class="form-contact-us" action="/submit" method="POST">
           <h2 class="con-heading">Contact Us</h2>
-
           <input type="text" id="name" name="name" placeholder="Enter Your Name" required><br>
-
-
           <input type="email" id="email" name="email" placeholder="Enter Your Email" required><br>
-
           <textarea id="message" name="message" rows="4" placeholder="Enter Your Massege" required></textarea><br>
-
           <button class="send-msg-btn" type="submit">Send Massege</button>
         </form>
-
       </div>
     </div>
     <!-- Login page -->
